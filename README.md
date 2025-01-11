@@ -1,4 +1,4 @@
-# GitHub Actions Generator
+# GitHub Actions Builder Cli
 
 Generate GitHub Action workflow files and test templates automatically.
 
@@ -7,14 +7,14 @@ Generate GitHub Action workflow files and test templates automatically.
 - Generate `.github` folder and workflow files.
 - Customize workflows via CLI commands.
 - Supports CI and Deployment workflows.
-- Generate automation tests based on the chosen application language (Java, Ruby).
+- Generate automation tests based on the chosen application language (Java, Ruby, Node).
 
 ## Installation
 
 To install the package globally, run:
 
 ```bash
-npm install -g github-actions-generator
+npm install -g gha-builder-cli
 ```
 
 ## Usage
