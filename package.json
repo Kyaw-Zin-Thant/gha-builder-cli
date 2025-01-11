@@ -1,6 +1,6 @@
 {
   "name": "gha-builder-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate GitHub Action workflow files and test templates automatically.",
   "main": "/src/cli/index.js",
   "bin": {
