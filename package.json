@@ -1,0 +1,19 @@
+{
+  "name": "gha-builder-cli",
+  "version": "1.0.0",
+  "description": "Generate GitHub Action workflow files and test templates automatically.",
+  "main": "/src/cli/index.js",
+  "bin": {
+    "gha-generate": "./src/cli/index.js"
+  },
+  "scripts": {
+    "start": "node src/cli/index.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "inquirer": "^8.1.0",
+    "yaml": "^1.10.0"
+  },
+  "author": "Kyaw Zin Thant",
+  "license": "MIT"
+}

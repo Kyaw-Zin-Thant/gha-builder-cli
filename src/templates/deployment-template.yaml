@@ -1,0 +1,29 @@
+name: {{workflowName}}
+on:
+  push:
+    branches:
+      - {{branch}}
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Build and Deploy Application
+        run: |
+          if [ "{{language}}" = "java" ]; then
+            echo "Building Java Maven project..."
+            mvn clean package -DskipTests
+            echo "Deploying Java Maven artifact..."
+            # Add deployment steps for Maven artifact here
+          elif [ "{{language}}" = "ruby" ]; then
+            echo "Deploying Ruby application..."
+            # Add Ruby-specific deployment commands here
+          elif [ "{{language}}" = "node" ]; then
+            echo "Deploying Node.js application..."
+            npm install
+            npm run build
+          else
+            echo "Unsupported language: {{language}}"
+            exit 1
