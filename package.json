@@ -4,7 +4,7 @@
   "description": "Generate GitHub Action workflow files and test templates automatically.",
   "main": "/src/cli/index.js",
   "bin": {
-    "gha-generate": "./src/cli/index.js"
+    "gha-generate": "src/cli/index.js"
   },
   "scripts": {
     "start": "node src/cli/index.js"
